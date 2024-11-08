@@ -1,0 +1,26 @@
+<form [formGroup] = 'contacForm' class="max-w-lg mx-auto">
+    <input
+      type="text"
+      placeholder="Nombre"
+      formControlName="name" name="name"
+      class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+      required />
+    <input
+      type="email"
+      placeholder="Correo Electrónico" 
+      formControlName="email" name="email"
+      class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+      required />
+    <textarea (keyup)="data()"
+      placeholder="Mensaje"
+      formControlName="message" name="message"
+      class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+      required></textarea>
+      @if(contacForm.valid){
+        <a  [href]=whatsApp()  target="_blank" class="bg-blue-500 rounded-lg border-solid border-2 p-2 text-white hover:bg-blue-400 text-center">Contactar</a>
+      }@else{
+        <a (click)="invalid()" type="button" class="bg-blue-500 rounded-lg border-solid border-2 p-2 text-white hover:bg-blue-400 text-center">Contactar</a>
+      }
+        
+  </form>
+
