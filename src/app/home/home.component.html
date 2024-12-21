@@ -1,23 +1,69 @@
+
 <div class="landing-container">
-    <header class="flex relative bg-cyan-600 text-white py-16 justify-center text-center">
+  
+    <header class="flex flex-col items-center relative bg-white py-1 justify-center text-center">
+      <div class="p-9 ">
+        <h1 class="text-6xl text-black font-bold font-maderarcoFont animate-fade-down animate-delay-1000">Bienvenidos a</h1>
+      </div>
       <!-- Imagen de fondo -->
-      <img src="assets/maderarco.jpg" alt="Maderarco" class="w-full h-auto   object-cover rounded-lg shadow-lg opacity-60" />
+      <img src="assets/fotosMaderarco/maderarcohorizontal.png" alt="Maderarco" class="w-full h-auto   " />
   
       <!-- Texto sobre la imagen -->
-      <div class="absolute inset-0 flex flex-col items-center justify-center">
-        <h1 class="text-4xl font-bold">Bienvenidos a Maderarco</h1>
-        <p class="text-lg mt-4 max-w-2xl px-4">Vive la magia de la música con un estilo único que solo Maderarco puede ofrecer.</p>
-      </div>
+      
     </header>
   
-    <section class="about-us bg-white py-16 px-4 text-center">
+    <section class="flex justify-center items-center flex-col gap-2 rosaMaderarco py-16 px-4 text-center">
       <h2 class="text-3xl font-semibold mb-4">Sobre Nosotros</h2>
       <p class="text-lg text-gray-700 max-w-3xl mx-auto">
         Maderarco es una agrupación dedicada a ofrecer experiencias musicales inolvidables. Nuestro repertorio abarca una amplia variedad de estilos, desde música clásica hasta contemporánea, siempre con un toque único que caracteriza a nuestro grupo.
       </p>
+      
+
+      <div id="indicators-carousel" class=" relative w-full md:w-1/2 mx-auto">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96 flex items-center justify-center">
+            <!-- Item 1 -->
+            <div class="flex justify-center w-full h-full rounded-lg">
+                <img [src]="img" class="w-full h-full object-contain rounded-lg" alt="...">
+            </div>
+        </div>
+       
+        <!-- Slider indicators -->
+        <div class="absolute z-30  flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+          @for(image of images; track image; let i = $index){<button 
+                  [ngClass]="{'bg-slate-500': i === currentIndex}"
+                  class="w-3 h-3 rounded-full  bg-white hover:bg-slate-600 transition-colors duration-200"
+                  (click)="changeSlide(i)"
+                  aria-label="Slide indicator">
+          </button>}
+        </div>
+        
+        <!-- Slider controls -->
+        <button type="button" (click)="prev()" class="absolute top-1/2 left-2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/70 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700 -translate-y-1/2 focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10">
+                <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        
+        <button type="button" (click)="next()" class="absolute top-1/2 right-2 z-30 flex items-center justify-center w-10 h-10 rounded-full bg-white/70 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700 -translate-y-1/2 focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10">
+                <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+      </div>
+      
+      
+      
+
     </section>
   
-    <section class="our-music bg-gray-100 py-16 px-4 text-center">
+    <section class="flex flex-col items-center our-music bg-gray-100 py-16 px-4 text-center">
       <h2 class="text-3xl font-semibold mb-4">Nuestra Música</h2>
       <p class="text-lg text-gray-700 max-w-3xl mx-auto">
         Exploramos diferentes géneros y adaptamos nuestra música para cada ocasión, creando atmósferas mágicas que conectan con el público y hacen de cada presentación un evento especial.
@@ -25,20 +71,53 @@
   
       <!-- Video de YouTube -->
       <div class="mt-8">
-        <iframe class="w-full max-w-3xl h-64 mx-auto rounded-lg shadow-lg" width="560" height="315" src="https://www.youtube.com/embed/-GnUA0PsiMc?si=sDVHBAkIuWmTVmtq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="w-full h-full rounded-lg shadow-lg"  src="https://www.youtube.com/embed/-GnUA0PsiMc?si=nGa9Mpu5noVRNkPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
-  
-    <section class="upcoming-events bg-white py-16 px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Próximos Eventos</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-        No te pierdas nuestras próximas presentaciones en vivo. ¡Mantente atento para más detalles!
+    
+    <section class="services-section rosaMaderarco py-16 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Nuestros Servicios</h2>
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+        Descubre todo lo que Maderarco tiene para ofrecer. Da clic en cualquiera de nuestros servicios para conocer más.
       </p>
+    
+      <!-- Contenedor de servicios -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Servicio 1 -->
+        <a [routerLink]="['/clases']"  class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
+          <img src="assets/iconos/clases.png" alt="Clases de Instrumento" class="w-20 h-20 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Clases de Instrumento</h3>
+          <p class="text-gray-700 text-sm mt-2">Aprende a tocar tu instrumento favorito con nuestros profesores expertos.</p>
+        </a>
+    
+        <!-- Servicio 2 -->
+        <a href="/tienda" class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
+          <img src="assets/iconos/tienda.png" alt="Tienda" class="w-20 h-20 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Tienda</h3>
+          <p class="text-gray-700 text-sm mt-2">Descubre instrumentos, accesorios y artículos musicales únicos.</p>
+        </a>
+    
+        <!-- Servicio 3 -->
+        <a [routerLink]="['/eventos']" class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
+          <img src="assets/iconos/eventos.png" alt="Eventos" class="w-20 h-20 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Eventos</h3>
+          <p class="text-gray-700 text-sm mt-2">Asiste a nuestras presentaciones y eventos exclusivos.</p>
+        </a>
+    
+        <!-- Servicio 4 -->
+        <a href="/talleres" class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
+          <img src="assets/iconos/talleres.png" alt="Talleres" class="w-20 h-20 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Talleres</h3>
+          <p class="text-gray-700 text-sm mt-2">Participa en talleres musicales y creativos para todas las edades.</p>
+        </a>
+      </div>
     </section>
+    
   
-    <section class="contact bg-gray-100 py-16 px-4 text-center">
+    <section class="contact verdeMaderarco py-16 px-4 text-center">
       <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
       <app-form />
     </section>
+    
   </div>
   

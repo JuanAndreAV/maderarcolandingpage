@@ -4,7 +4,7 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from '@angula
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [ReactiveFormsModule, JsonPipe],
+  imports: [ReactiveFormsModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
@@ -16,7 +16,7 @@ export class FormComponent {
   whatsApp(){
     let whatsApp: string = `https://wa.me/${this.whatsAppLink}?text=${this.encodedMessage}`;
     return whatsApp
-  }
+  };
 
 user: any = {
   name: '',
