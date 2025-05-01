@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { InfoService } from '../../servicios/info.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+  infoMaderarco = inject(InfoService);
+  year =  new Date().getFullYear().toString()
 
+  
+  
 }

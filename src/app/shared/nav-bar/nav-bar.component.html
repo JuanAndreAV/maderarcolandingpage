@@ -1,6 +1,27 @@
-<nav class="verdeMaderarco  flex items-center justify-start px-2 py-0 shadow-lg">
-    <!-- Logotipo -->
-    <div class="flex items-start">
-     <a [routerLink]="['']"> <img src="assets/fotosMaderarco/logoblanco.png" alt="Logotipo de Maderarco" class="w-20 h-auto"></a>
-    </div>
-    </nav>
+
+<nav class="verdeMaderarco flex justify-around items-center py-2  shadow-md z-30 fixed w-full 
+      bottom-0 md:top-0 md:bottom-auto md:justify-around md:mb-20 transition-all">
+    <!-- Home -->
+    <a [routerLink]="['']" class="flex flex-col items-center text-white hover:text-black transition ">
+      <img src="assets/fotosMaderarco/logoblanco.png" alt="Logotipo de Maderarco" class="w-20 h-auto">
+      
+    </a>
+
+    <!-- Eventos -->
+    <a href="/eventos" class="flex flex-col items-center text-white hover:text-black transition">
+      Eventos
+    </a>
+
+    <!-- Talleres -->
+    <a href="/clases" class="flex flex-col items-center text-white  hover:text-black transition">
+      Clases/Talleres
+    </a>
+
+    <!-- Tienda -->
+    <a href="/tienda" class="flex flex-col items-center text-white hover:text-black transition">
+      <svg class="w-6 h-6 mb-1" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" aria-hidden="true">
+        <path d="M9 21h6M4 6h16l-2 10H6z"></path>
+      </svg>
+      <span class="text-xs">Tienda</span>
+    </a>
+  </nav>

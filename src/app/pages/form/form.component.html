@@ -1,4 +1,4 @@
-<section class="contact verdeMaderarco py-16 px-4 text-center">
+<section id="contacto" class="contact verdeMaderarco py-16 px-4 text-center">
   <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
 
 <form [formGroup] = 'contacForm' class="max-w-lg mx-auto">
@@ -20,9 +20,9 @@
       class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
       required></textarea>
       @if(contacForm.valid){
-        <a  [href]=whatsApp()  target="_blank" class="bg-blue-500 rounded-lg border-solid border-2 p-2 text-white hover:bg-blue-400 text-center">Contactar</a>
+        <a  [href]=whatsApp()  target="_blank" class="bg-gray-800 rounded-lg border-solid border-2 p-2 text-white hover:bg-blue-400 text-center">Contactar</a>
       }@else{
-        <a (click)="invalid()" type="button" class="bg-blue-500 rounded-lg border-solid border-2 p-2 text-white hover:bg-blue-400 text-center">Contactar</a>
+        <a (click)="invalid()" type="button" class="bg-gray-800 rounded-lg border-solid border-2 p-2 text-white hover:bg-blue-400 text-center">Contactar</a>
       }
         
   </form>

@@ -1,0 +1,59 @@
+<!-- Fondo del modal -->
+ @if(isOpen()){
+<div class="fixed inset-0 z-50 overflow-y-auto">
+  <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <!-- Fondo oscuro -->
+    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+      <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+    </div>
+
+    <!-- Contenido del modal -->
+    <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl w-full relative">
+      <!-- Encabezado -->
+      <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+        <h1 class="text-4xl font-maderarcoFont text-center mb-6">Próximos eventos!</h1>
+        
+        <!-- Botón cerrar -->
+        <button (click)="togleModal()" 
+                class="absolute top-4 right-4 bg-gray-100 hover:bg-gray-200 rounded-full p-2 focus:outline-none z-10">
+          <svg class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Cuerpo del modal con carrusel -->
+      <div class="bg-white px-4 pb-6 sm:p-6 sm:pb-4">
+        
+        <div class="flex flex-col items-center">
+          <!-- Carrusel centrado -->
+          <div class="carousel carousel-center max-w-md w-full rounded-box">
+            <div class="carousel-item w-full">
+              <img src="assets/eventos/evento1.jpg" alt="Evento 1" 
+                   class="w-full h-auto max-h-[400px] object-contain rounded-lg" />
+            </div>
+            <div class="carousel-item w-full">
+              <img src="assets/eventos/evento2.jpg" alt="Evento 2" 
+                   class="w-full h-auto max-h-[400px] object-contain rounded-lg" />
+            </div>
+          </div>
+
+          <!-- Indicadores del carrusel (opcional) -->
+          <div class="flex justify-center mt-4 space-x-2">
+            <button class="w-3 h-3 rounded-full bg-gray-300"></button>
+            <button class="w-3 h-3 rounded-full bg-gray-300"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie del modal (opcional) -->
+      <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+        <button type="button" 
+                (click)="togleModal()"
+                class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>}

@@ -1,17 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormComponent } from '../pages/form/form.component';
 import { NgClass } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { InfoService } from '../servicios/info.service';
+import { EventsModalComponent } from '../modals/events.modal/events.modal.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgClass,FormComponent, RouterModule],
+  imports: [EventsModalComponent, NgClass, FormComponent, RouterModule,],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  infoMaderarco = inject(InfoService);
   images=[
       'assets/fotosMaderarco/maderarco1.JPEG',
       'assets/fotosMaderarco/maderarco2.JPEG',

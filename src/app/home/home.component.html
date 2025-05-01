@@ -1,7 +1,7 @@
 
 <div class="landing-container">
   
-    <header class="flex flex-col items-center relative bg-white py-1 justify-center text-center">
+    <header class="flex flex-col items-center md:mt-20 relative bg-white py-1 justify-center text-center">
       <div class="p-9 ">
         <h1 class="text-6xl text-black font-bold font-maderarcoFont animate-fade-down animate-delay-1000">Bienvenidos a</h1>
       </div>
@@ -12,10 +12,10 @@
       
     </header>
   
-    <section class="flex justify-center items-center flex-col gap-2 rosaMaderarco py-16 px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Sobre Nosotros</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
-        Maderarco es una agrupación dedicada a ofrecer experiencias musicales inolvidables. Nuestro repertorio abarca una amplia variedad de estilos, desde música clásica hasta contemporánea, siempre con un toque único que caracteriza a nuestro grupo.
+    <section id="nosotros"class="flex justify-center items-center flex-col gap-2 rosaMaderarco py-16 px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Maderarco</h2>
+      <p class="text-lg text-justify text-gray-700 max-w-3xl mx-auto">
+        Somos una agrupación dedicada a ofrecer experiencias musicales inolvidables. Nuestro repertorio abarca una amplia variedad de estilos, desde música clásica hasta contemporánea, siempre con un toque único que caracteriza a nuestro grupo.
       </p>
       
 
@@ -57,15 +57,11 @@
             </span>
         </button>
       </div>
-      
-      
-      
-
     </section>
-  
+    
     <section class="flex flex-col items-center our-music bg-gray-100 py-16 px-4 text-center">
       <h2 class="text-3xl font-semibold mb-4">Nuestra Música</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+      <p class="text-lg text-justify text-gray-700 max-w-3xl mx-auto">
         Exploramos diferentes géneros y adaptamos nuestra música para cada ocasión, creando atmósferas mágicas que conectan con el público y hacen de cada presentación un evento especial.
       </p>
   
@@ -73,51 +69,58 @@
       <div class="mt-8">
         <iframe class="w-full h-full rounded-lg shadow-lg"  src="https://www.youtube.com/embed/-GnUA0PsiMc?si=nGa9Mpu5noVRNkPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
+      <!-- Video de TikTok -->
+      <div class="flex flex-col items-center mt-8">
+        <a href="{{infoMaderarco.tiktok}}" target="_blank"
+          class="flex items-center justify-center bg-black text-white text-lg font-semibold w-12 h-12 rounded-full hover:bg-gray-800 hover:animate-bounce animate-pulse transition duration-300"
+          aria-label="Ir al perfil de TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-6 h-6 fill-current">
+            <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z" />
+          </svg>
+        </a>
+        <p class="mt-2 text-sm text-gray-600">Síguenos en TikTok</p>
+      </div>
+      
+      
+  
     </section>
     
-    <section class="services-section rosaMaderarco py-16 px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Nuestros Servicios</h2>
-      <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
+    <section id="servicios" class="services-section rosaMaderarco py-16 px-4 text-center">
+      <h2  class="text-3xl font-semibold mb-4">Nuestros Servicios</h2>
+      <p class="text-lg text-justify text-gray-700 max-w-3xl mx-auto mb-8">
         Descubre todo lo que Maderarco tiene para ofrecer. Da clic en cualquiera de nuestros servicios para conocer más.
       </p>
     
       <!-- Contenedor de servicios -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Servicio 1 -->
-        <a [routerLink]="['/clases']"  class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
-          <img src="assets/iconos/clases.png" alt="Clases de Instrumento" class="w-20 h-20 mx-auto mb-4" />
-          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Clases de Instrumento</h3>
+        <a href="/clases"  class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
+          <img src="https://teds-list.com/wp-content/uploads/2020/11/beginner-guide-to-learning-the-clarinet.webp" alt="Clases de Instrumento" class="w-20 h-20 mx-auto mb-4" />
+          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Clases y talleres</h3>
           <p class="text-gray-700 text-sm mt-2">Aprende a tocar tu instrumento favorito con nuestros profesores expertos.</p>
         </a>
     
         <!-- Servicio 2 -->
         <a href="/tienda" class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
-          <img src="assets/iconos/tienda.png" alt="Tienda" class="w-20 h-20 mx-auto mb-4" />
+          <img src="https://media.gettyimages.com/id/484556207/es/foto/variety-of-used-violins.jpg?s=612x612&w=gi&k=20&c=KpN934izNvXXMHMMN3gcIGqeVMZJyGnoj_rJbAy4Uq8=" alt="Tienda" class="w-20 h-20 mx-auto mb-4" />
           <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Tienda</h3>
           <p class="text-gray-700 text-sm mt-2">Descubre instrumentos, accesorios y artículos musicales únicos.</p>
         </a>
     
         <!-- Servicio 3 -->
         <a [routerLink]="['/eventos']" class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
-          <img src="assets/iconos/eventos.png" alt="Eventos" class="w-20 h-20 mx-auto mb-4" />
+          <img src="assets/fotosMaderarco/maderarco2.JPEG" alt="Eventos" class="w-20 h-20 mx-auto mb-4" />
           <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Eventos</h3>
           <p class="text-gray-700 text-sm mt-2">Asiste a nuestras presentaciones y eventos exclusivos.</p>
-        </a>
-    
-        <!-- Servicio 4 -->
-        <a href="/talleres" class="group block bg-white shadow-lg rounded-lg p-6 text-center transition-transform transform hover:-translate-y-2">
-          <img src="assets/iconos/talleres.png" alt="Talleres" class="w-20 h-20 mx-auto mb-4" />
-          <h3 class="text-xl font-semibold text-rosaMaderarco group-hover:text-slate-700">Talleres</h3>
-          <p class="text-gray-700 text-sm mt-2">Participa en talleres musicales y creativos para todas las edades.</p>
         </a>
       </div>
     </section>
     
   
-    <section class="contact verdeMaderarco py-16 px-4 text-center">
-      <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+    <section  class="contact verdeMaderarco py-16 px-4 text-center">
+      
       <app-form />
     </section>
-    
   </div>
+
   

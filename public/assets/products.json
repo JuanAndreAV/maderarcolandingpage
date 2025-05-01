@@ -1,0 +1,157 @@
+[
+    {
+      "id": "VG001HPM",
+      "name": "Violín 4/4 Aileen",
+      "description": "Violín académico de alta rotación especializado para el desarrollo de procesos musicales.",
+      "price": 280000,
+      "category": "instrumentos de cuerda frotada",
+      "sub-category": "violin",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2024/10/RGB2365.jpg?fit=853%2C1280&ssl=1",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/violin-strad-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/violin-strad-back.jpg",
+        "https://storage.cloud.google.com/tu-bucket/violin-strad-side.jpg"
+      ],
+      "stock": 15
+    },
+    {
+      "id": "LG001-HPM",
+      "name": "Viola Académica Aileen 16\"",
+      "description": "Viola de tamaño medio (16 pulgadas), sonido cálido y resonante, adecuada para estudiantes y músicos.",
+      "price": 0,
+      "category": "instrumentos de cuerda frotada",
+      "sub-category": "viola",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/LG001-1.jpg?fit=853%2C1280&ssl=1",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/viola-16-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/viola-16-side.jpg"
+      ],
+      "stock": 10
+    },
+    {
+      "id": "CL34-STD",
+      "name": "Cello Estándar 3/4",
+      "description": "Cello de tamaño 3/4, construcción tradicional, ofrece un tono rico y profundo.",
+      "price": 780.00,
+      "category": "instrumentos de cuerda frotada",
+      "sub-category": "cello",
+      "image": "https://storage.cloud.google.com/tu-bucket/cello-34.jpg",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/cello-34-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/cello-34-side.jpg"
+      ],
+      "stock": 8
+    },
+    {
+      "id": "GC-YAM-C40",
+      "name": "Guitarra Clásica Yamaha C40",
+      "description": "Guitarra clásica de excelente relación calidad-precio, ideal para principiantes y estudiantes.",
+      "price": 180.99,
+      "category": "guitarras",
+      "sub-category": "guitarra clasica",
+      "image": "https://storage.cloud.google.com/tu-bucket/guitarra-yamaha-c40.jpg",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/guitarra-yamaha-c40-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/guitarra-yamaha-c40-back.jpg"
+      ],
+      "stock": 25
+    },
+    {
+      "id": "GE-FNDR-STRAT",
+      "name": "Guitarra Eléctrica Fender Stratocaster",
+      "description": "Icónica guitarra eléctrica Fender Stratocaster, sonido versátil para diversos géneros musicales.",
+      "price": 1200.00,
+      "category": "guitarras",
+      "sub-category": "guitarra electrica",
+      "image": "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat.jpg",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat-back.jpg",
+        "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat-headstock.jpg"
+      ],
+      "stock": 12
+    },
+    {
+      "id": "TR-YAM-YTR2330",
+      "name": "Trompeta Sib Yamaha YTR-2330",
+      "description": "Trompeta en Sib para principiantes, fácil de tocar y con un sonido brillante.",
+      "price": 550.00,
+      "category": "vientos",
+      "sub-category": "metales",
+      "image": "https://storage.cloud.google.com/tu-bucket/trompeta-yamaha-2330.jpg",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/trompeta-yamaha-2330-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/trompeta-yamaha-2330-side.jpg"
+      ],
+      "stock": 7
+    },
+    {
+      "id": "CL-BNDR-CL300",
+      "name": "Clarinete Sib Buffet Crampon CL300",
+      "description": "Clarinete en Sib de la reconocida marca Buffet Crampon, ideal para estudiantes avanzados.",
+      "price": 920.00,
+      "category": "vientos",
+      "sub-category": "maderas",
+      "image": "https://storage.cloud.google.com/tu-bucket/clarinete-buffet-cl300.jpg",
+      "images": [
+        "https://storage.cloud.google.com/tu-bucket/clarinete-buffet-cl300-front.jpg",
+        "https://storage.cloud.google.com/tu-bucket/clarinete-buffet-cl300-keys.jpg"
+      ],
+      "stock": 5
+    },
+    {
+      "id": "AVIO-SAV-EST",
+      "name": "Arco para Violín Savarez Estudiante",
+      "description": "Arco para violín de madera de Brasil, ideal para estudiantes.",
+      "price": 45.00,
+      "category": "accesorios",
+      "sub-category": "violin-viola",
+      "image": "https://storage.cloud.google.com/tu-bucket/arco-violin-savarez.jpg",
+      "images": [],
+      "stock": 30
+    },
+    {
+      "id": "ACEL-ROS-BERN",
+      "name": "Resina para Cello Bernardel",
+      "description": "Resina de alta calidad para cello, produce un sonido claro y potente.",
+      "price": 18.50,
+      "category": "accesorios",
+      "sub-category": "cello",
+      "image": "https://storage.cloud.google.com/tu-bucket/resina-cello-bernardel.jpg",
+      "images": [],
+      "stock": 20
+    },
+    {
+      "id": "ACON-MIC-SHURE",
+      "name": "Micrófono para Contrabajo Shure Beta 91A",
+      "description": "Micrófono de condensador de medio límite para contrabajo, captura un sonido rico y detallado.",
+      "price": 299.00,
+      "category": "accesorios",
+      "sub-category": "contrabajo",
+      "image": "https://storage.cloud.google.com/tu-bucket/microfono-contrabajo-shure.jpg",
+      "images": [],
+      "stock": 5
+    },
+    {
+      "id": "AGUI-CAP-DUN",
+      "name": "Ceja para Guitarra Dunlop Trigger Capo",
+      "description": "Ceja de acción de gatillo para guitarra, fácil de usar y asegura un cejado preciso.",
+      "price": 22.75,
+      "category": "accesorios",
+      "sub-category": "guitarras",
+      "image": "https://storage.cloud.google.com/tu-bucket/ceja-guitarra-dunlop.jpg",
+      "images": [],
+      "stock": 40
+    },
+    {
+      "id": "AVIE-LENG-RICO",
+      "name": "Cañas para Clarinete Rico Royal #3",
+      "description": "Caja de 10 cañas para clarinete Rico Royal de dureza 3.",
+      "price": 15.99,
+      "category": "accesorios",
+      "sub-category": "vientos",
+      "image": "https://storage.cloud.google.com/tu-bucket/canas-clarinete-rico.jpg",
+      "images": [],
+      "stock": 50
+    }
+  ]

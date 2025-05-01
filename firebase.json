@@ -1,6 +1,12 @@
 {
   "hosting": {
     "public": "dist/maderarco/browser",
+    "rewrites":[
+      {
+        "source":"**",
+        "destination":"/index.html"
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -1,0 +1,83 @@
+<main class="flex-grow md:mt-20 bg-gray-100 py-10">
+  <div class="container mx-auto px-4">
+    <!-- Título del Servicio -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- Título y filtros -->
+      <div class="mb-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <h2 class="text-3xl font-semibold font-maderarcoFont animate-fade-down animate-delay-1000 text-gray-800 mb-6 text-center">Nuestra tienda musical</h2>
+      </div>
+
+      @if (loading()) {
+        <!-- Skeleton loading -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          @for (item of [1,2,3,4,5,6,7,8]; track $index) {
+            <div class="bg-white rounded-lg shadow-md overflow-hidden animate-pulse">
+              <div class="bg-gray-200 h-48 w-full"></div>
+              <div class="p-4 space-y-3">
+                <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                <div class="h-4 bg-gray-200 rounded"></div>
+                <div class="h-4 bg-gray-200 rounded w-1/2"></div>
+                <div class="h-8 bg-gray-200 rounded mt-4"></div>
+              </div>
+            </div>
+          }
+        </div>
+      } @else {
+        <!-- Productos reales -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          @for (product of products(); track product.id) {
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group flex flex-col h-full">
+              <!-- Contenedor de imagen ajustado -->
+              <div class="relative overflow-hidden aspect-square flex-shrink-0">
+                <img 
+                  (click)="viewProductDetail(product.id)"
+                  [src]="product.image" 
+                  [alt]="product.name"
+                  class="w-full h-full cursor-pointer object-contain transition-transform duration-500 group-hover:scale-105 p-4"
+                >
+                @if (product.stock === 0) {
+                  <div class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded">
+                    Agotado
+                  </div>
+                } @else if (product.stock < 5) {
+                  <div class="absolute top-2 right-2 bg-amber-500 text-white text-xs px-2 py-1 rounded">
+                    Últimas unidades
+                  </div>
+                }
+              </div>
+
+              <!-- Contenido de la tarjeta -->
+              <div class="p-4 flex flex-col flex-grow">
+                <div class="flex justify-between items-start mb-2">
+                  <h3 class="font-semibold text-lg text-gray-900 line-clamp-1">{{product.name}}</h3>
+                  <span class="font-bold text-verdeMaderarco">{{product.price | currency:'COP':'$':'1.0-0' }}</span>
+                </div>
+                
+                <p class="text-gray-500 text-sm mb-4 line-clamp-2 flex-grow">{{product.description}}</p>
+                
+                <div class="flex justify-between items-center mt-auto">
+                  <span class="text-xs text-gray-400 uppercase">{{product['sub-category']}}</span>
+                  @if (product.stock > 0) {
+                    <button
+                      (click)="addToCart(product)"
+                      class="px-4 py-2 bg-azulMaderarco text-white text-sm font-medium rounded hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors"
+                    >
+                      Comprar
+                    </button>
+                  } @else {
+                    <button 
+                      disabled
+                      class="px-4 py-2 bg-gray-300 text-gray-500 text-sm font-medium rounded cursor-not-allowed"
+                    >
+                      No disponible
+                    </button>
+                  }
+                </div>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</main>
