@@ -3,6 +3,8 @@ import { HomeComponent } from './home/home.component';
 import { ClasesComponent } from './pages/clases/clases.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
+import { ProductPageComponent } from './pages/tienda/product-page/product-page.component';
+import { Component } from '@angular/core';
 
 export const routes: Routes = [{
     path: '',
@@ -18,7 +20,14 @@ export const routes: Routes = [{
 },
 {
     path: 'tienda',
-    component: TiendaComponent
+    component: TiendaComponent,
+    children: [
+        {
+            path: 'product/:id',
+            component: ProductPageComponent
+        }
+        
+    ]
 }
 
 ];

@@ -1,10 +1,10 @@
 [
     {
-      "id": "VG001HPM",
+      "id": "VG001-HPM",
       "name": "Violín 4/4 Aileen",
       "description": "Violín académico de alta rotación especializado para el desarrollo de procesos musicales.",
       "price": 280000,
-      "category": "instrumentos de cuerda frotada",
+      "category": "cuerda frotada",
       "sub-category": "violin",
       "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2024/10/RGB2365.jpg?fit=853%2C1280&ssl=1",
       "images": [
@@ -12,145 +12,268 @@
         "https://storage.cloud.google.com/tu-bucket/violin-strad-back.jpg",
         "https://storage.cloud.google.com/tu-bucket/violin-strad-side.jpg"
       ],
-      "stock": 15
+      "stock": 15,
+      "features": [
+        "Alta calidad a un bajo costo",
+        "Tapa frontal de pino laminado",
+        "Aros y fondo de arce con terminado mate",
+        "Clavijas, mentonera y diapasón de madera de temporada sólida ennegrecida",
+        "Tiracuerdas metálico con microafinadores; un conjunto de piezas que garantizan una buena estabilidad de afinación",
+        "Barniz con terminado mate",
+        "Sonido cálido con enfoque de ecualización en frecuencias bajas y medias",
+        "Tipo de enfoque: Sonido redondo enfocado",
+        "Incluye estuche, arco y colofonia"
+      ]
+      
     },
+    {
+        "id": "VG102B",
+        "name": "Violín 4/4 Aileen",
+        "description": "Violín académico especializado para el desarrollo de procesos musicales. Instrumento con énfasis en el desarrollo de un sonido cálido y con buena proyección, su caja de resonancia en madera sólida garantiza uno de los sonidos de más alta calidad en la línea de instrumentos académicos del mercado, la opción con las mejores prestaciones sonoras con relación a su bajo costo.",
+        "price": 480000,
+        "category": "cuerda frotada",
+        "sub-category": "violin",
+        "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2024/10/RGB2710.jpg?fit=853%2C1280&ssl=1",
+        "images": [
+          "https://storage.cloud.google.com/tu-bucket/cello-34-front.jpg",
+          "https://storage.cloud.google.com/tu-bucket/cello-34-side.jpg"
+        ],
+        "stock": 10,
+        "features": [
+          "Alta calidad a un bajo costo",
+          "Tapa frontal de pino sólido",
+          "Aros y fondo de arce sólido con terminado mate",
+          "Caja de resonancia de maderas sólidas que garantizan un excelente nivel de sonido",
+          "Clavijas, mentonera y diapasón de madera de temporada sólida ennegrecida",
+          "Tiracuerdas metálico con microafinadores; un conjunto de piezas que garantizan una buena estabilidad de afinación",
+          "Barniz con terminado mate de color oscuro",
+          "Sonido cálido con enfoque de ecualización en frecuencias bajas y medias",
+          "Tipo de enfoque: Sonido redondo enfocado",
+          "Incluye estuche, arco y colofonia"
+      ]
+      },
     {
       "id": "LG001-HPM",
       "name": "Viola Académica Aileen 16\"",
       "description": "Viola de tamaño medio (16 pulgadas), sonido cálido y resonante, adecuada para estudiantes y músicos.",
       "price": 0,
-      "category": "instrumentos de cuerda frotada",
+      "category": "cuerda frotada",
       "sub-category": "viola",
       "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/LG001-1.jpg?fit=853%2C1280&ssl=1",
       "images": [
         "https://storage.cloud.google.com/tu-bucket/viola-16-front.jpg",
         "https://storage.cloud.google.com/tu-bucket/viola-16-side.jpg"
       ],
-      "stock": 10
+      "stock": 10,
+      "features": [
+      "Alta calidad a un bajo costo",
+      "Tapa frontal de pino laminado",
+      "Aros y fondo de arce con terminado mate",
+      "Clavijas, mentonera y diapasón de madera de temporada sólida ennegrecida",
+      "Tiracuerdas metálico con microafinadores; un conjunto de piezas que garantizan una buena estabilidad de afinación",
+      "Barniz con terminado mate",
+      "Sonido cálido con enfoque de ecualización en frecuencias bajas y medias",
+      "Tipo de enfoque: Sonido redondo enfocado",
+      "Incluye estuche, arco y colofonia"
+    ]
     },
     {
-      "id": "CL34-STD",
-      "name": "Cello Estándar 3/4",
-      "description": "Cello de tamaño 3/4, construcción tradicional, ofrece un tono rico y profundo.",
-      "price": 780.00,
-      "category": "instrumentos de cuerda frotada",
-      "sub-category": "cello",
-      "image": "https://storage.cloud.google.com/tu-bucket/cello-34.jpg",
-      "images": [
-        "https://storage.cloud.google.com/tu-bucket/cello-34-front.jpg",
-        "https://storage.cloud.google.com/tu-bucket/cello-34-side.jpg"
-      ],
-      "stock": 8
-    },
-    {
-      "id": "GC-YAM-C40",
-      "name": "Guitarra Clásica Yamaha C40",
-      "description": "Guitarra clásica de excelente relación calidad-precio, ideal para principiantes y estudiantes.",
-      "price": 180.99,
-      "category": "guitarras",
-      "sub-category": "guitarra clasica",
-      "image": "https://storage.cloud.google.com/tu-bucket/guitarra-yamaha-c40.jpg",
+      "id": "AC-HOOL",
+      "name": "Guitarra Acústica Persina",
+      "description": "Con la perfecta relación entre costo y calidad, la línea académica clásica Persian se constituye como la opción mejor calificada en guitarras de línea económica del mercado ¡la mejor opción al mejor costo!",
+      "price": 352000,
+      "category": "cuerda pulsada",
+      "sub-category": "guitarra acustica",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/achool-1.jpg?fit=853%2C1280&ssl=1",
       "images": [
         "https://storage.cloud.google.com/tu-bucket/guitarra-yamaha-c40-front.jpg",
         "https://storage.cloud.google.com/tu-bucket/guitarra-yamaha-c40-back.jpg"
       ],
-      "stock": 25
+      "stock": 25,
+      "features": [
+        "Guitarra acústica Persian",
+        "Tamaño Clásica (39”)",
+        "Tapa frontal de tilo laminado",
+        "Aros y fondo de tilo laminado",
+        "Biselado incrustado en ABS",
+        "Roseta de sticker de diseño",
+        "Diapasón y puentezuela nogal negro",
+        "Puente y cejilla sintética",
+        "Mástil de caoba",
+        "Terminado mate lacado",
+        "Sonido enfocado con enfoque de ecualización en las frecuencias medias",
+        "Tipo de enfoque: Sonido compacto"
+    ]
     },
     {
-      "id": "GE-FNDR-STRAT",
-      "name": "Guitarra Eléctrica Fender Stratocaster",
-      "description": "Icónica guitarra eléctrica Fender Stratocaster, sonido versátil para diversos géneros musicales.",
-      "price": 1200.00,
-      "category": "guitarras",
-      "sub-category": "guitarra electrica",
-      "image": "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat.jpg",
+      "id": "AF227CA-38",
+      "name": "Guitarra Acústica Persian",
+      "description": " Con una construcción específica para su óptima liberación de armónicos, una línea de alto nivel para el «play and sing» y el «fingerstyle», con terminados bellísimos y características ergonómicas de gran adaptabilidad para nuestro contexto cultural, las guitarras folk Persian son la mejor alternativa en guitarras académicas del mercado ¡la mejor opción al mejor costo!",
+      "price": 0,
+      "category": "cuerda pulsada",
+      "sub-category": "guitarra acustica",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/af227c-nt-1.jpg?fit=853%2C1280&ssl=1",
       "images": [
         "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat-front.jpg",
         "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat-back.jpg",
         "https://storage.cloud.google.com/tu-bucket/guitarra-fender-strat-headstock.jpg"
       ],
-      "stock": 12
+      "stock": 12,
+      "features": [
+        "Guitarra acústica Persian",
+        "Tamaño “Clasical Style con Cutaway” (38”)",
+        "Tapa frontal de pino laminado",
+        "Aros y fondo de tilo",
+        "Bisel incrustado en ABS",
+        "Roseta de sticker de diseño",
+        "Diapasón y puentezuela de palo de rosa",
+        "Puente y cejilla sintética",
+        "Mástil de cedro",
+        "Truss Rod (alma) de 1 vía",
+        "Terminado brillante lacado",
+        "Sonido disperso con enfoque de ecualización en las frecuencias medias altas",
+        "Tipo de enfoque: Sonido de alta dispersión"
+  ]
     },
     {
-      "id": "TR-YAM-YTR2330",
-      "name": "Trompeta Sib Yamaha YTR-2330",
-      "description": "Trompeta en Sib para principiantes, fácil de tocar y con un sonido brillante.",
-      "price": 550.00,
+      "id": "CL346N",
+      "name": "Clarinete Aileen",
+      "description": "Clarinete especializado para el desarrollo de procesos musicales. La mejor opción en instrumentos de viento (maderas) en niveles académicos e intermedios con relación a su bajo costo y altas prestaciones.",
+      "price": 720000,
       "category": "vientos",
-      "sub-category": "metales",
-      "image": "https://storage.cloud.google.com/tu-bucket/trompeta-yamaha-2330.jpg",
+      "sub-category": "maderas",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/cl346n-1.jpg?fit=853%2C1280&ssl=1",
       "images": [
         "https://storage.cloud.google.com/tu-bucket/trompeta-yamaha-2330-front.jpg",
         "https://storage.cloud.google.com/tu-bucket/trompeta-yamaha-2330-side.jpg"
       ],
-      "stock": 7
+      "stock": 7,
+        "features": [
+        "Gama de estudio",
+        "Material del cuerpo: resina (Ebonita)",
+        "Llaves en níquel plateado",
+        "Juntas en corcho",
+        "2 barriles",
+        "Boquilla y tapaboquilla plástico",
+        "Abrazadera de metal",
+        "Caña #2",
+        "Grasa para corcho, paño de limpieza y guantes para banda",
+        "Estuche semiduro"
+    ]
     },
     {
-      "id": "CL-BNDR-CL300",
-      "name": "Clarinete Sib Buffet Crampon CL300",
-      "description": "Clarinete en Sib de la reconocida marca Buffet Crampon, ideal para estudiantes avanzados.",
-      "price": 920.00,
+      "id": "SP1001G",
+      "name": "Saxofón Alto",
+      "description": "Saxofón especializado para el desarrollo de procesos musicales. La mejor opción en instrumentos de viento (maderas) en niveles académicos e intermedios con relación a su bajo costo y altas prestaciones.",
+      "price": 1680000,
       "category": "vientos",
       "sub-category": "maderas",
-      "image": "https://storage.cloud.google.com/tu-bucket/clarinete-buffet-cl300.jpg",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/sp1001g-1.jpg?fit=853%2C1280&ssl=1",
       "images": [
         "https://storage.cloud.google.com/tu-bucket/clarinete-buffet-cl300-front.jpg",
         "https://storage.cloud.google.com/tu-bucket/clarinete-buffet-cl300-keys.jpg"
       ],
-      "stock": 5
+      "stock": 5,
+      "features": [
+        "Alta calidad en materiales y acabados a un bajo costo",
+        "Gama de estudio",
+        "Material del cuerpo, cuello, campana y llaves: Aleación de bronce y zinc (latón)",
+        "Cuerpo lacado y llaves lacadas",
+        "Campana labrada",
+        "Resonador metálico",
+        "Boquilla de apertura 4C corte selmer (ebonita) con tapaboquilla plástica",
+        "Caña incluida",
+        "Abrazadera metálica",
+        "Zapatillas en cuero",
+        "Llave de F sostenido agudo/alto",
+        "Diseño ergonómico moderno",
+        "Sin número de serie",
+        "Estuche semiduro",
+        "Guantes para banda",
+        "Sonido con enfoque en frecuencias altas (sonido brillante)"
+      ]
     },
     {
-      "id": "AVIO-SAV-EST",
-      "name": "Arco para Violín Savarez Estudiante",
-      "description": "Arco para violín de madera de Brasil, ideal para estudiantes.",
-      "price": 45.00,
-      "category": "accesorios",
-      "sub-category": "violin-viola",
-      "image": "https://storage.cloud.google.com/tu-bucket/arco-violin-savarez.jpg",
+      "id": "TP8011G",
+      "name": "Trompeta Dorada",
+      "description": "Trompeta especializada para el desarrollo de procesos musicales. La mejor opción en instrumentos de viento (metales) en niveles académicos e intermedios con relación a su bajo costo y altas prestaciones.",
+      "price": 714000,
+      "category": "vientos",
+      "sub-category": "metales",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/tp8011g-1.jpg?fit=853%2C1280&ssl=1",
       "images": [],
-      "stock": 30
+      "stock": 10,
+      "features": [
+        "Alta calidad en materiales y acabados a un bajo costo",
+        "Gama de estudio",
+        "Material del cuerpo: aleación cobre y zinc (latón)",
+        "Material de la superficie: lacado dorado",
+        "Anillo para bomba en tercer pistón",
+        "Válvula de desagüe en tercer pistón y en bomba general de afinación",
+        "Boquilla 7C",
+        "Guantes para banda",
+        "Estuche semiduro",
+        "Sonido compacto con enfoque en frecuencias altas (sonido brillante)"
+    ]
     },
     {
-      "id": "ACEL-ROS-BERN",
-      "name": "Resina para Cello Bernardel",
-      "description": "Resina de alta calidad para cello, produce un sonido claro y potente.",
-      "price": 18.50,
-      "category": "accesorios",
-      "sub-category": "cello",
-      "image": "https://storage.cloud.google.com/tu-bucket/resina-cello-bernardel.jpg",
+      "id": "ME37",
+      "name": "Melódica Aileen",
+      "description": "La melódica Aileen ME37 es una opción ideal para estudiantes y músicos principiantes que buscan un instrumento portátil y fácil de tocar, sin comprometer la calidad sonora. Diseñada para facilitar el aprendizaje, esta melódica se adapta perfectamente a diversas interpretaciones musicales, desde solistas hasta conjuntos de cámara.",
+      "price": 0,
+      "category": "vientos",
+      "sub-category": "Melódica",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/me37-bk-1.jpg?fit=853%2C1280&ssl=1",
       "images": [],
-      "stock": 20
+      "stock": 20,
+        "features": [
+            "Teclas: 37 teclas, que cubren tres octavas y permiten una amplia gama de notas",
+            "Material: Construida en plástico ABS de alta calidad, que proporciona durabilidad y una resonancia adecuada",
+            "Sistema de viento: Accionada por un ventilador interno que produce el flujo de aire necesario para generar el sonido",
+            "Tonalidad: Probablemente en Do (C), adaptándose a las necesidades de diferentes intérpretes",
+            "Diseño: Modelo de una pieza, facilitando el ensamblaje y mantenimiento",
+            "Accesorios: Incluye una boquilla de plástico, que facilita el inicio del aprendizaje",
+            "Colores disponibles: En colores Negro, Azul, Rojo, Rosado"
+        ]
+        
     },
     {
-      "id": "ACON-MIC-SHURE",
-      "name": "Micrófono para Contrabajo Shure Beta 91A",
-      "description": "Micrófono de condensador de medio límite para contrabajo, captura un sonido rico y detallado.",
-      "price": 299.00,
-      "category": "accesorios",
-      "sub-category": "contrabajo",
-      "image": "https://storage.cloud.google.com/tu-bucket/microfono-contrabajo-shure.jpg",
+      "id": "RB2210G",
+      "name": "Flauta Dulce",
+      "description": "La flauta dulce Aileen RB2210G es una opción ideal para estudiantes y músicos principiantes que buscan un instrumento con una construcción confiable y una sonoridad clara. Diseñada para facilitar el aprendizaje, esta flauta dulce se adapta perfectamente a diversas interpretaciones musicales, desde solistas hasta conjuntos de cámara.",
+      "price": 26000,
+      "category": "vientos",
+      "sub-category": "maderas",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/rb2210g-4.jpg?fit=853%2C1280&ssl=1",
       "images": [],
-      "stock": 5
+      "stock": 5,
+      "features": [
+        "Material: Fabricada en plástico ABS de alta calidad, que proporciona durabilidad y una resonancia adecuada",
+        "Tonalidad: Probablemente en Do (C), adaptándose a las necesidades de diferentes intérpretes",
+        "Diseño: Modelo de una pieza, facilitando el ensamblaje y mantenimiento",
+        "Accesorios: Incluye una bolsa de transporte y una limpieza, que garantizan durabilidad y una respuesta precisa",
+        "Colores disponibles: Probablemente en colores como blanco, negro o madera simulada, adaptándose a las preferencias estéticas de los músicos"
+         ]
     },
     {
-      "id": "AGUI-CAP-DUN",
-      "name": "Ceja para Guitarra Dunlop Trigger Capo",
-      "description": "Ceja de acción de gatillo para guitarra, fácil de usar y asegura un cejado preciso.",
-      "price": 22.75,
-      "category": "accesorios",
-      "sub-category": "guitarras",
-      "image": "https://storage.cloud.google.com/tu-bucket/ceja-guitarra-dunlop.jpg",
+      "id": "CA17",
+      "name": "Kalimba - Acasia",
+      "description": "",
+      "price": 98000,
+      "category": "percusion",
+      "sub-category": "kalimba",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/01/kalimba-2.jpg?fit=853%2C1280&ssl=1",
       "images": [],
       "stock": 40
     },
     {
-      "id": "AVIE-LENG-RICO",
-      "name": "Cañas para Clarinete Rico Royal #3",
-      "description": "Caja de 10 cañas para clarinete Rico Royal de dureza 3.",
-      "price": 15.99,
+      "id": "APP-001",
+      "name": "Apoyapié Metálico",
+      "description": "Apoyapié cómodo y antideslizante.",
+      "price": 30000,
       "category": "accesorios",
-      "sub-category": "vientos",
-      "image": "https://storage.cloud.google.com/tu-bucket/canas-clarinete-rico.jpg",
+      "sub-category": "guitarras",
+      "image": "https://i0.wp.com/lacitemusical.com/wp-content/uploads/2025/03/apoyapie-metalico-1.jpg?fit=853%2C1280&ssl=1",
       "images": [],
       "stock": 50
     }

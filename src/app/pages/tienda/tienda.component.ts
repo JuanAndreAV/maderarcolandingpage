@@ -1,19 +1,27 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { StoreService } from '../../servicios/store.service';
 import { CommonModule } from '@angular/common';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { Product } from '../../interfaces/product';
+import {  Router, RouterModule,  } from '@angular/router';
+import { ProductPageComponent } from './product-page/product-page.component';
 
 @Component({
   selector: 'app-tienda',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ProductCardComponent, ProductPageComponent, RouterModule ],
   templateUrl: './tienda.component.html',
   styleUrl: './tienda.component.css'
 })
 export class TiendaComponent implements OnInit {
   storeService = inject(StoreService);
-  public products = signal<any>([]);
+  router = inject(Router);
+
+  public products = signal<Product[]>([]);
   public loading = signal<boolean>(false);
   public error = signal<string | null>(null);
+  public selectedProductId = signal<string | null>(null);
+
   
 
   categories: string[] = ['Instrumentos', 'Equipos', 'Accesorios', 'Partituras'];
@@ -40,26 +48,20 @@ export class TiendaComponent implements OnInit {
    })
    
   };
-whatsAppMessage(product: any){
-  const { id, name, price} = product
-  const message =  `Hola, Maderarco. Me gustaria recibir información sobre: ${id} - ${name}, precio: ${price}.`;
-  return message
-}
-  addToCart(product: any) {
 
-    const phoneNumber = '573043284108';
-    
-    const message = encodeURIComponent(this.whatsAppMessage(product));
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+ 
 
-    // 3. Navega a la URL de WhatsApp
-    window.open(whatsappUrl, '_blank'); 
-  };
-
-  viewProductDetail(productId: string) {
-    console.log('Ver detalle del producto:', productId);
-    // Aquí implementarías la navegación al detalle del producto
+  navigateToProductDetail(productId: string): void {
+    this.router.navigate(['/tienda/product', productId]);
+     this.selectedProductId.set(productId); // Guarda el ID del producto seleccionado
+    // No necesitamos navegar programáticamente aquí si estamos condicionalmente renderizando
   }
+
+  // Método para volver a mostrar la lista de productos
+  volverATienda(): void {
+    this.selectedProductId.set(null);
+  }
+ 
 
 
 }
