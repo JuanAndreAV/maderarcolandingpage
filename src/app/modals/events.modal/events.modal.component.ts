@@ -1,13 +1,13 @@
 import { Component, inject, signal, Input, Output, EventEmitter } from '@angular/core';
 import { InfoService } from '../../servicios/info.service';
-import { NgClass } from '@angular/common';
+import { BuyBtnComponent } from '../../shared/buy-btn/buy-btn.component';
 
 @Component({
   selector: 'app-events',
   standalone: true,
-  imports: [NgClass],
+  imports: [BuyBtnComponent],
   templateUrl: './events.modal.component.html',
-  styleUrl: './events.modal.component.css'
+  
 })
 export class EventsModalComponent {
   isOpen = signal(true);
@@ -19,7 +19,7 @@ export class EventsModalComponent {
  
 
   togleModal() {
-    this.isOpen.update(()=>!this.isOpen)
+    this.isOpen.update(()=>!this.isOpen())
   }
 
   

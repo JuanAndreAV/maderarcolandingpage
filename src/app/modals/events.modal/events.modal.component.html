@@ -28,10 +28,10 @@
         <div class="flex flex-col items-center">
           <!-- Carrusel centrado -->
           <div class="carousel carousel-center max-w-md w-full rounded-box">
-            <div class="carousel-item w-full">
+            <!--<div class="carousel-item w-full">
               <img src="assets/eventos/evento1.jpg" alt="Evento 1" 
                    class="w-full h-auto max-h-[400px] object-contain rounded-lg" />
-            </div>
+            </div>-->
             <div class="carousel-item w-full">
               <img src="assets/eventos/evento2.jpg" alt="Evento 2" 
                    class="w-full h-auto max-h-[400px] object-contain rounded-lg" />
@@ -43,11 +43,15 @@
             <button class="w-3 h-3 rounded-full bg-gray-300"></button>
             <button class="w-3 h-3 rounded-full bg-gray-300"></button>
           </div>
+          <div class="flex justify-center mt-4 space-x-2">
+            <app-buy-btn />
+          </div>
         </div>
       </div>
-
+      
       <!-- Pie del modal (opcional) -->
       <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+       
         <button type="button" 
                 (click)="togleModal()"
                 class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
