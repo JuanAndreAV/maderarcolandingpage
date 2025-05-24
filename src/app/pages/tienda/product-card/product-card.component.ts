@@ -40,6 +40,6 @@ export class ProductCardComponent {
 
 viewProductDetail(productId: string) {
   console.log('Ver detalle del producto:', productId);
-  // Aquí implementarías la navegación al detalle del producto
+  // Aquí implementaré la navegación al detalle del producto
 }
 }

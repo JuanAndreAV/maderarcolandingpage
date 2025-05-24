@@ -10,10 +10,10 @@ import { BuyBtnComponent } from '../../shared/buy-btn/buy-btn.component';
   
 })
 export class EventsModalComponent {
-  isOpen = signal(true);
+  isOpen = signal(false);
   infoService = inject(InfoService);
   
-  @Output() closeModalEvent = new EventEmitter<void>();
+  //@Output() closeModalEvent = new EventEmitter<void>();
   @Input() accordionItems: { title: string; content: string }[] = [];
   expandedPanel: number | null = null;
  

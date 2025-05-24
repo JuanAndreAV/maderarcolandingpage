@@ -8,7 +8,7 @@ import { JsonPipe } from '@angular/common';
 @Component({
   selector: 'app-product-page',
   standalone: true,
-  imports: [JsonPipe],
+  imports: [],
   templateUrl: './product-page.component.html',
   styleUrl: './product-page.component.css'
 })
@@ -57,7 +57,7 @@ loadProductDetails(id: string): void {
       this.loadingDetail.set(false);
     },
     error: error => {
-      console.error('Error al cargar el detalle del producto', error);
+      //console.error('Error al cargar el detalle del producto', error);
       this.errorDetail.set(true);
       this.loadingDetail.set(false);
     }
